@@ -123,6 +123,15 @@ header.solida .hamb{color:var(--indigo)}
 .lista li b{color:var(--texto)}
 .lista li i{flex:none;width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,var(--indigo-claro),var(--indigo));color:#fff;display:grid;place-items:center;font-style:normal;font-size:15px;margin-top:1px}
 
+/* ===== WIDGET ===== */
+.widget{background:linear-gradient(180deg,#EEF0FF,var(--fondo) 70%)}
+.widget .in{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.tel-widget{position:relative;justify-self:center;width:340px;border-radius:52px 52px 0 0;background:#0f0f1a;padding:12px 12px 0;box-shadow:0 40px 80px rgba(30,27,75,.3);overflow:hidden}
+.tel-widget img{border-radius:40px 40px 0 0;width:100%;height:auto}
+.tel-widget .borde{position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(180deg,transparent,var(--fondo))}
+.tel-widget:before{content:"";position:absolute;top:24px;left:50%;transform:translateX(-50%);width:96px;height:28px;border-radius:999px;background:#000;z-index:2}
+@media (max-width:980px){.widget .in{grid-template-columns:1fr}.tel-widget{width:300px}}
+
 /* ===== BENTO ===== */
 .bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(180px,auto);gap:18px}
 .caja{background:#fff;border:1px solid var(--linea);border-radius:var(--r);padding:26px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
