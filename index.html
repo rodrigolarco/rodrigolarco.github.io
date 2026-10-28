@@ -4,70 +4,179 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CorteCard — Tus tarjetas, sin sorpresas</title>
-<meta name="description" content="CorteCard te dice cuánto pagarás en el próximo corte de cada tarjeta de crédito. Registra gastos por voz, cuotas, presupuestos y varias monedas.">
+<meta name="description" content="CorteCard aprende cómo gastas, te dice cuánto pagarás en el próximo corte de cada tarjeta, te avisa antes de cada cargo recurrente y te sugiere con qué tarjeta comprar.">
+<meta property="og:title" content="CorteCard — Tus tarjetas, sin sorpresas">
+<meta property="og:description" content="Aprende cómo gastas, proyecta tu próximo corte, te avisa de los cargos que suelen llegar y te dice con qué tarjeta comprar.">
+<meta property="og:image" content="img/inicio.png">
 <link rel="stylesheet" href="estilo.css">
 <link rel="icon" href="img/icono.png">
+<link rel="apple-touch-icon" href="img/icono.png">
 </head>
 <body>
 <header><div class="nav">
   <a class="marca" href="./"><img src="img/icono.png" alt="">CorteCard</a>
-  <nav><a href="#funciones">Funciones</a><a href="#faq">Preguntas</a><a href="soporte.html">Soporte</a><a href="privacidad.html">Privacidad</a></nav>
+  <nav><a href="#aprende">Aprende de ti</a><a href="#funciones">Funciones</a><a href="#precio">Precio</a><a href="#faq">Preguntas</a><a href="soporte.html">Soporte</a><a class="cta" href="#descargar">Descargar</a></nav>
 </div></header>
 
 <div class="hero"><div class="in">
   <div>
-    <h1>Tus tarjetas,<br>sin sorpresas.</h1>
-    <p>CorteCard te dice cuánto llevas gastado en el ciclo de cada tarjeta de crédito, cuánto pagarás en el próximo corte y hasta qué día tienes para hacerlo. Registra un gasto en segundos, por voz o escribiendo.</p>
-    <a class="btn" id="descargar" href="#descargar"> Descargar en App Store</a>
-    <p style="font-size:.9rem;opacity:.75;margin-top:14px">7 días gratis. Luego 3.99 US$ al mes o 29.99 US$ al año.</p>
+    <div class="pill">🧠 <b>Nuevo:</b> modelo personal que aprende de tus gastos</div>
+    <h1>Tus tarjetas,<br><span>sin sorpresas.</span></h1>
+    <p class="lead">CorteCard aprende cómo gastas, te dice cuánto pagarás en el próximo corte de cada tarjeta, te avisa antes de cada cargo que suele llegar y te sugiere con qué tarjeta comprar.</p>
+    <div class="botones">
+      <a class="btn" href="#descargar"> Descargar en App Store</a>
+      <a class="btn sec" href="#aprende">Ver cómo aprende</a>
+    </div>
+    <p class="nota">7 días gratis con todo. Luego 3.99 US$ al mes o 29.99 US$ al año.</p>
+    <div class="cifras">
+      <div><b>±9 %</b><span>de acierto al proyectar tu corte*</span></div>
+      <div><b>2 seg</b><span>para registrar un gasto por voz</span></div>
+      <div><b>0</b><span>claves bancarias: tus datos son tuyos</span></div>
+    </div>
   </div>
-  <img src="img/1-inicio.png" alt="Pantalla de inicio de CorteCard">
+  <div>
+    <div class="telefono">
+      <div class="pantallas" id="pantallas">
+        <img src="img/inicio.png" alt="Inicio: cuánto llevas en el ciclo y cuándo es tu corte">
+        <img src="img/analisis.png" alt="Análisis: proyección del cierre con tu curva de gasto">
+        <img src="img/recurrentes.png" alt="Cargos que suelen llegar, con fecha y monto estimado">
+        <img src="img/tarjeta.png" alt="Con qué tarjeta comprar: fecha de pago, presupuesto y línea">
+        <img src="img/voucher.png" alt="Comprobante de un gasto">
+        <img src="img/categorias.png" alt="Categorías y presupuestos">
+        <img src="img/historial.png" alt="Historial de pagos">
+      </div>
+    </div>
+    <div class="puntos" id="puntos"></div>
+    <p class="pista">Desliza el teléfono para ver más pantallas</p>
+  </div>
 </div></div>
 
-<section id="funciones">
-  <h2>Todo lo que necesitas para usar tus tarjetas con tranquilidad</h2>
-  <p class="sub">Pensada para tarjetas de crédito de Perú y Latinoamérica: ciclos de corte, fecha de pago, cuotas y más de una moneda.</p>
-  <div class="grid">
-    <div class="card"><div class="ico">🎙️</div><h3>Registra por voz</h3><p>Mantén presionado y dicta: “cuarenta soles en Wong con la Visa”. CorteCard entiende el monto, la tarjeta y la categoría.</p></div>
-    <div class="card"><div class="ico">✂️</div><h3>Cada tarjeta, su ciclo</h3><p>Día de corte y día de pago por tarjeta. Si el pago cae en fin de semana o feriado, se mueve al día hábil correcto.</p></div>
-    <div class="card"><div class="ico">🧾</div><h3>Compras en cuotas</h3><p>Reparte una compra mes a mes con los centavos exactos y revisa cómo quedaría tu próximo pago antes de comprar.</p></div>
-    <div class="card"><div class="ico">🎯</div><h3>Presupuestos</h3><p>Un presupuesto mensual por categoría, tus ingresos y cuánto de tu mes ya está comprometido.</p></div>
-    <div class="card"><div class="ico">💱</div><h3>Varias monedas</h3><p>Soles y una segunda moneda con totales separados y tipo de cambio de referencia actualizado.</p></div>
-    <div class="card"><div class="ico">☁️</div><h3>iCloud y pareja</h3><p>Sincroniza entre tus dispositivos y comparte los gastos con tu pareja. Widget, recordatorios y bloqueo con Face ID.</p></div>
+<section id="aprende">
+  <span class="kicker">Modelo personal</span>
+  <h2>Aprende cómo gastas tú, no cómo gasta el promedio</h2>
+  <p class="sub">Todo se calcula en tu iPhone. Con cada gasto que registras, CorteCard entiende tu ritmo dentro del ciclo, tus hábitos por categoría y los cargos que se repiten, en todas tus tarjetas y en efectivo.</p>
+
+  <div class="fila">
+    <div class="texto">
+      <h2>Sabe cuánto cerrará tu tarjeta antes del corte</h2>
+      <p>No es una regla de tres. CorteCard aprende la forma de tu ciclo (quincenas, fines de semana, los cargos que llegan al final) y proyecta el cierre de cada tarjeta con tu propia curva de gasto. Y te dice qué tan bien acertó en los cierres anteriores.</p>
+      <ul>
+        <li><i>📈</i><div><b>Proyección por tarjeta</b> con lo que llevas, tu promedio y lo que suele llegar antes del corte.</div></li>
+        <li><i>✅</i><div><b>Se evalúa a sí mismo</b>: solo usa el modelo cuando acierta más que la regla simple.</div></li>
+        <li><i>🔒</i><div><b>Nada sale de tu iPhone</b>. Sin cuentas, sin servidores, sin claves bancarias.</div></li>
+      </ul>
+    </div>
+    <img class="shot" src="img/analisis.png" alt="Pantalla de análisis con la proyección del cierre">
+  </div>
+
+  <div class="fila inv">
+    <div class="texto">
+      <h2>Te avisa antes de que llegue cada cargo recurrente</h2>
+      <p>La luz, el agua, el mantenimiento, Netflix, el colegio: CorteCard detecta lo que pagas cada mes, con qué tarjeta y en qué fecha, y te lo recuerda la mañana del día que suele tocar. Si ya lo registraste, no te molesta.</p>
+      <div class="burbujas">
+        <div class="burbuja"><img src="img/icono.png" alt=""><div><b>Hoy sueles pagar la luz</b><span>≈ S/ 190 con tu Visa Signature. ¿Ya llegó el recibo?</span></div></div>
+        <div class="burbuja"><img src="img/icono.png" alt=""><div><b>Mantenimiento del edificio</b><span>Suele llegar el 2 de nov. · ≈ S/ 350 · Mastercard Black</span></div></div>
+        <div class="burbuja"><img src="img/icono.png" alt=""><div><b>Tu Mastercard Black cerró en S/ 3,734</b><span>13 % menos que el ciclo anterior. Pagas hasta el 26 oct.</span></div></div>
+      </div>
+    </div>
+    <img class="shot" src="img/recurrentes.png" alt="Lista de cargos que suelen llegar">
+  </div>
+
+  <div class="fila">
+    <div class="texto">
+      <h2>Antes de comprar, te dice con qué tarjeta te conviene</h2>
+      <p>Escribe o dicta "zapatillas 450" y CorteCard compara tus tarjetas: en qué mes pagarías con cada una según su corte, si te alcanza el presupuesto de esa categoría, cuánta línea te quedaría y cuántos días tendrías para pagar. Con cuotas también.</p>
+      <ul>
+        <li><i>📅</i><div><b>Mes de pago</b> real según la fecha de corte de cada tarjeta.</div></li>
+        <li><i>🎯</i><div><b>Presupuesto</b> de la categoría en ese mes, con lo que ya tienes comprometido.</div></li>
+        <li><i>💳</i><div><b>Línea disponible</b> y días para pagar, tarjeta por tarjeta.</div></li>
+      </ul>
+    </div>
+    <img class="shot" src="img/tarjeta.png" alt="Sugerencia de tarjeta para una compra">
+  </div>
+
+  <div class="fila inv">
+    <div class="texto">
+      <h2>Cada gasto, un comprobante</h2>
+      <p>Dicta "cuarenta soles en Wong con la Visa" y en dos segundos tienes el gasto registrado y su comprobante: tarjeta, categoría, hora, en qué cierre cae y hasta cuándo lo pagas. Los pagos con el celular se registran solos y, si toca el aviso, ves el comprobante.</p>
+      <ul>
+        <li><i>🎙️</i><div><b>Por voz</b>, desde la app, el widget, el Centro de control o el botón de Acción.</div></li>
+        <li><i>📱</i><div><b>Pagos con el celular</b> registrados automáticamente con una automatización de Atajos.</div></li>
+        <li><i>🧾</i><div><b>Comprobante</b> para compartir o corregir con un toque.</div></li>
+      </ul>
+    </div>
+    <img class="shot" src="img/voucher.png" alt="Comprobante de un gasto">
   </div>
 </section>
 
-<section>
-  <h2>Así se ve</h2>
-  <p class="sub">Capturas de la app en iPhone.</p>
-  <div class="capturas">
-    <img src="img/1-inicio.png" alt="Inicio">
-    <img src="img/2-con-que-tarjeta-compro.png" alt="Con qué tarjeta comprar">
-    <img src="img/3-categorias-y-presupuestos.png" alt="Categorías y presupuestos">
-    <img src="img/4-historial-de-pagos.png" alt="Historial de pagos">
-    <img src="img/5-asistente.png" alt="Asistente">
+<section id="funciones">
+  <span class="kicker">Y además</span>
+  <h2>Todo lo que una tarjeta de crédito necesita</h2>
+  <p class="sub">Pensada para tarjetas de Perú y Latinoamérica: ciclos de corte, fecha de pago, cuotas y más de una moneda.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">✂️</div><h3>Cada tarjeta, su ciclo</h3><p>Día de corte y día de pago por tarjeta. Si el pago cae en fin de semana o feriado, se mueve al día hábil correcto.</p></div>
+    <div class="card"><div class="ico">🧾</div><h3>Compras en cuotas</h3><p>Reparte una compra mes a mes con los centavos exactos y mira cómo quedaría cada pago antes de comprar.</p></div>
+    <div class="card"><div class="ico">🎯</div><h3>Presupuestos por mes de pago</h3><p>Un presupuesto por categoría, tus ingresos y cuánto de tu mes ya está comprometido.</p></div>
+    <div class="card"><div class="ico">💱</div><h3>Varias monedas</h3><p>Soles y una segunda moneda con totales separados y tipo de cambio de referencia actualizado.</p></div>
+    <div class="card"><div class="ico">👩‍❤️‍👨</div><h3>Comparte con tu pareja</h3><p>Los dos registran gastos y ven lo mismo, sincronizado por iCloud. Avisos cuando el otro gasta con tu tarjeta.</p></div>
+    <div class="card"><div class="ico">✨</div><h3>Asistente</h3><p>Pregúntale en lenguaje natural: "¿cuánto gasté en comida este mes?" o "¿cuándo pago la Visa?".</p></div>
+    <div class="card"><div class="ico">🔔</div><h3>Recordatorios que importan</h3><p>Antes del corte, antes del pago, cuando te pasas de un presupuesto y cuando llega un cargo que esperabas.</p></div>
+    <div class="card"><div class="ico">🔐</div><h3>Privado de verdad</h3><p>Face ID, sin cuentas ni servidores nuestros. Tus datos viven en tu iPhone y en tu propio iCloud.</p></div>
+  </div>
+</section>
+
+<section id="precio">
+  <div class="precio">
+    <div>
+      <span class="kicker" style="color:#C7C7FF">Precio</span>
+      <h2>Pruébalo todo gratis 7 días</h2>
+      <p>Sin limitaciones durante la prueba. Después, menos de lo que cuesta un café al mes. Cancelas cuando quieras desde tu cuenta de Apple.</p>
+      <a class="btn" href="#descargar" style="margin-top:8px"> Empezar 7 días gratis</a>
+    </div>
+    <div class="planes">
+      <div class="plan"><div><b>29.99 US$ / año</b><small>Equivale a 2.50 US$ al mes</small></div><span class="ahorro">Ahorra 37 %</span></div>
+      <div class="plan"><div><b>3.99 US$ / mes</b><small>Sin compromiso</small></div></div>
+    </div>
   </div>
 </section>
 
 <section id="faq" class="faq">
-  <h2>Preguntas frecuentes</h2>
-  <p class="sub">Lo que más nos preguntan.</p>
-  <details><summary>¿CorteCard se conecta a mi banco?</summary><p>No. Tú registras los gastos (por voz o escribiendo) y CorteCard hace las cuentas. No pide usuarios ni claves bancarias.</p></details>
+  <span class="kicker">Preguntas</span>
+  <h2>Lo que más nos preguntan</h2>
+  <p class="sub"></p>
+  <details><summary>¿CorteCard se conecta a mi banco?</summary><p>No. Tú registras los gastos (por voz, escribiendo o con la automatización de pagos con el celular) y CorteCard hace las cuentas. No pide usuarios ni claves bancarias.</p></details>
+  <details><summary>¿Cómo "aprende" de mis gastos?</summary><p>Con lo que registras, la app calcula en tu iPhone tu curva de gasto dentro del ciclo, tus hábitos por categoría y los cargos que se repiten cada mes. Necesita unos tres ciclos para activar el modelo; mientras tanto usa una proyección simple y te lo dice.</p></details>
   <details><summary>¿Dónde se guardan mis datos?</summary><p>En tu iPhone y, si activas la sincronización, en tu propia cuenta de iCloud. Nadie más tiene acceso, ni siquiera nosotros.</p></details>
   <details><summary>¿Cuánto cuesta?</summary><p>Los primeros 7 días son gratis con todas las funciones. Después cuesta 3.99 US$ al mes o 29.99 US$ al año (precio local según tu país). Puedes cancelar cuando quieras desde los ajustes de tu cuenta de Apple.</p></details>
   <details><summary>¿Funciona fuera de Perú?</summary><p>Sí. La moneda principal se detecta por el país de tu iPhone y puedes elegir una segunda moneda.</p></details>
-  <details><summary>¿Puedo corregir un gasto?</summary><p>Sí. Toca cualquier gasto en Inicio o en la lista de gastos para editarlo o borrarlo.</p></details>
+  <details><summary>¿Puedo corregir un gasto?</summary><p>Sí. Toca cualquier gasto para ver su comprobante y desde ahí editarlo o borrarlo.</p></details>
 </section>
 
 <section id="descargar" style="text-align:center">
   <h2>Empieza hoy</h2>
-  <p class="sub">Disponible para iPhone en la App Store.</p>
-  <a class="btn" style="background:var(--indigo);color:#fff" href="#">Descargar en App Store</a>
+  <p class="sub" style="margin:0 auto 24px">Disponible para iPhone en la App Store.</p>
+  <a class="btn" style="background:var(--indigo);color:#fff" href="#"> Descargar en App Store</a>
+  <p style="color:var(--gris);font-size:.85rem;margin-top:28px">* Acierto medido en los últimos cierres del ejemplo con 12 meses de datos; la app muestra el suyo en Análisis.</p>
 </section>
 
 <footer>
   © 2026 Rodrigo Larco · CorteCard<br>
   <a href="privacidad.html">Política de privacidad</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Términos de uso</a> · <a href="soporte.html">Soporte</a>
 </footer>
+
+<script>
+(function(){
+  var p=document.getElementById('pantallas'),d=document.getElementById('puntos');if(!p||!d)return;
+  var n=p.children.length,i;for(i=0;i<n;i++){var s=document.createElement('i');if(i===0)s.className='activo';s.addEventListener('click',(function(k){return function(){p.scrollTo({left:k*p.clientWidth,behavior:'smooth'});}})(i));d.appendChild(s);}
+  function marcar(){var k=Math.round(p.scrollLeft/p.clientWidth);for(var j=0;j<n;j++)d.children[j].className=j===k?'activo':'';}
+  p.addEventListener('scroll',function(){window.requestAnimationFrame(marcar);});
+  // Pasa de pantalla solo hasta que el visitante toque el teléfono.
+  var auto=setInterval(function(){var k=Math.round(p.scrollLeft/p.clientWidth);p.scrollTo({left:((k+1)%n)*p.clientWidth,behavior:'smooth'});},3200);
+  ['pointerdown','touchstart','wheel'].forEach(function(e){p.addEventListener(e,function(){clearInterval(auto);},{passive:true});});
+  var h=document.querySelector('header'),hero=document.querySelector('.hero');
+  function cab(){h.classList.toggle('claro',window.scrollY>hero.offsetHeight-60);}
+  window.addEventListener('scroll',cab,{passive:true});cab();
+})();
+</script>
 </body>
 </html>
