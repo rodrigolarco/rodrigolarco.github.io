@@ -293,3 +293,6 @@ footer .legal a{display:inline;margin:0 0 0 14px}
  .precio .caja-precio{padding:36px 22px;border-radius:28px}.final .caja-final{padding:48px 22px;border-radius:28px}
  footer .cols{grid-template-columns:1fr}
 }
+
+/* Distintivo oficial de Apple: se usa tal cual, sin fondo ni borde extra. */
+.badge-store{display:inline-flex;align-items:center;line-height:0}.badge-store img{height:54px;width:auto;display:block}
